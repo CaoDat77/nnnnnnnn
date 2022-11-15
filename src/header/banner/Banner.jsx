@@ -32,9 +32,9 @@ function Banner() {
               We Serve Food, Harmony, &amp; Laughter Since 1998
             </p>
             <div className="btn-header color-white d-flex justify-content-center pd-t-30">
-              <a className="pimary-color set-btn" href="menu.html">
+              <NavLink className="pimary-color set-btn" to="/menu">
                 VIEW MENU
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
