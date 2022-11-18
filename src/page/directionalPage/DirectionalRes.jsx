@@ -35,7 +35,7 @@ function DirectionalRes() {
             data-aos="fade-up"
             data-aos-duration={1000}
           >
-            <img src="/dish1.svg" alt="" />
+            <img src="/image-home/dish1.svg" alt="" />
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ function DirectionalRes() {
             data-aos="fade-left"
             data-aos-duration={1000}
           >
-            <img src="/dish2.svg" alt="" />
+            <img src="/image-home/dish2.svg" alt="" />
           </div>
         </div>
       </div>

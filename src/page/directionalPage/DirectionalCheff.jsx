@@ -15,7 +15,7 @@ function DirectionalCheff() {
               data-aos-duration={1000}
               style={{ width: "90%" }}
             >
-              <img src="/cheff-home-1.svg" alt="" />
+              <img src="/image-home/cheff-home-1.svg" alt="" />
             </div>
             <div
               className="cheff cheff-2 position-absolute overflow-hidden"
@@ -23,7 +23,7 @@ function DirectionalCheff() {
               data-aos-duration={1000}
               style={{ width: "75%" }}
             >
-              <img src="/cheff-home-2.svg" alt="" />
+              <img src="/image-home/cheff-home-2.svg" alt="" />
             </div>
           </div>
         </div>

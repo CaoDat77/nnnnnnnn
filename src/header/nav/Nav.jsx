@@ -38,6 +38,19 @@ const Nav = () => {
           </li>
           <li className="position-relative introduce">
             <p style={{ marginBottom: 0 }}>Abouts</p>
+            <div className="abouts font-nor">
+              <div className="ab-us pd-b-10 pd-t-10 pd-l-20 border-bot">
+                <NavLink className="color-white" to="/aboutRes">
+                  About Restaurant
+                </NavLink>
+              </div>
+              <div className="ab-cheff pd-b-10 pd-l-20 pd-t-10">
+                <NavLink className="color-white" to="/aboutCheff">
+                  About Cheff
+                </NavLink>
+              </div>
+            </div>
+            <div className="arrow" />
           </li>
           <li>
             <NavLink className="color-white" to="/contact">

@@ -45,14 +45,14 @@ function DirectionalContact() {
               data-aos="zoom-in"
               data-aos-duration={1000}
             >
-              <img src="/contact-home-1.svg" alt="" />
+              <img src="/image-home/contact-home-1.svg" alt="" />
             </div>
             <div
               className="overflow-hidden"
               data-aos="zoom-in"
               data-aos-duration={2000}
             >
-              <img src="/contact-home-2.svg" alt="" />
+              <img src="/image-home/contact-home-2.svg" alt="" />
             </div>
           </div>
         </div>

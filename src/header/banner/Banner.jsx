@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 function Banner() {
   return (
-    <div className="header-body d-flex justify-content-center align-items-center">
+    <div className="header-body d-flex justify-content-center ">
       <div>
         <div
           className="text-center title-home-page d-flex justify-content-center align-items-center"
@@ -14,7 +14,7 @@ function Banner() {
           data-aos-delay={500}
         >
           <div className="line" />
-          <h2 className="color-white font-30">BLOG</h2>
+          <h2 className="color-white font-30">Blog</h2>
           <div className="line" />
         </div>
         <div className="header-body-content">

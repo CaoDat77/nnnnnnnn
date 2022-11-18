@@ -255,8 +255,8 @@ header {
 nav {
   width: 100%;
 
-  padding: 0.5rem 0;
-  margin-top: 5rem;
+  padding: 5rem 0;
+
   transition: 0.5s;
 }
 
@@ -462,7 +462,7 @@ li a:hover {
 
 .book-table {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/image-book-table.svg");
+    url("/image-home/image-book-table.svg");
 }
 
 .form {

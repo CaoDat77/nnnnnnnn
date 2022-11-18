@@ -5,6 +5,7 @@ import DirectionalRes from "./directionalPage/DirectionalRes";
 import MenuHome from "./menuHome/MenuHome";
 import BookTable from "./directionalPage/BookTable";
 
+
 function Home() {
   return (
     <div className="color-white">
