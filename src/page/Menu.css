@@ -1,0 +1,15 @@
+.pd-menu {
+  padding: 1.6rem 2.4rem;
+}
+
+.small-text {
+  font-size: 1.4rem;
+}
+
+button:hover a {
+  color: #e3c731 !important;
+}
+
+.mg-t-30 {
+  margin-top: 3rem;
+}

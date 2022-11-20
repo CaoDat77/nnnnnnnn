@@ -312,7 +312,7 @@ button {
   top: 6.5rem;
   left: 0;
   width: 24rem;
-  background-color: rgba(191, 191, 191, 0.8);
+  background-color: rgba(191, 191, 191, 0.6);
   color: rgb(202, 202, 202);
   display: none;
   border-radius: 10px;
@@ -411,9 +411,9 @@ img:hover {
 }
 
 .set-btn {
-  border: 1px solid var(--primary-color);
+  border: 1px solid #fff;
   border-radius: 0.5rem;
-  color: var(--primary-color);
+  color: #fff;
   font-size: 2rem;
   padding: 1rem 2rem;
   font-family: "Jost", sans-serif;
@@ -434,18 +434,19 @@ li:hover {
   border: 1px solid var(--primary-color);
   padding: 1rem 2rem;
   border-radius: 5px;
+  color: var(--primary-color) !important;
 }
 
-li a:hover {
-  color: white !important;
+li:hover i {
+  color: var(--primary-color);
 }
 
 .set-btn:hover a {
   color: white !important;
 }
 .set-btn:hover {
-  background-color: var(--primary-color);
-  color: white !important;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .cheff-1 {
@@ -547,16 +548,20 @@ a {
   color: white;
 }
 
+.ab-us:hover a {
+  color: var(--primary-color) !important;
+}
+
+.ab-cheff:hover a {
+  color: var(--primary-color) !important;
+}
+
 .ab-us:hover {
-  font-weight: bold;
-  color: white;
-  background-color: var(--primary-color);
+  background-color: #333;
 }
 
 .ab-cheff:hover {
-  font-weight: bold;
-  color: white;
-  background-color: var(--primary-color);
+  background-color: #333;
 }
 
 .d-toggle {

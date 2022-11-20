@@ -1,0 +1,50 @@
+.chef-avatar img {
+  width: 70%;
+}
+
+.chef-avatar img:hover {
+  transform: scale(1);
+}
+
+.bg-comment {
+  background: url("/image-cheff/comment.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comment {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 10rem 2rem 15rem 2rem;
+}
+
+.prose {
+  width: 35rem;
+  position: absolute;
+  bottom: 15%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.prose img:hover {
+  transform: scale(1);
+}
+
+.assistant {
+  padding: 2.4rem 2rem;
+}
+
+.lineImg {
+  position: absolute;
+  right: 5rem;
+}
+
+.lineImg img {
+  width: 86%;
+}
+
+@media screen and (max-width: 1024px) {
+  .chef-avatar img {
+    width: 100%;
+  }
+}

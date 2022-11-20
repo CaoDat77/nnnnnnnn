@@ -71,12 +71,12 @@ const Nav = () => {
               ORDER ONLINE
             </NavLink>
           </li>
-          <li className="font-24">
+          <li className="font-20">
             <NavLink to="cart.html" className="color-white">
               <i className="bx bx-cart" />
             </NavLink>
           </li>
-          <li className="sign-open font-24">
+          <li className="sign-open font-20">
             <i className="bx bx-user" />
           </li>
         </ul>
