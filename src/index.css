@@ -298,7 +298,6 @@ nav {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  display: none;
 }
 
 button {
@@ -357,7 +356,7 @@ button {
   z-index: 2;
   margin-top: 8rem;
   opacity: 0;
-  animation: showForm 1s forwards;
+  animation: showForm 0.1s forwards;
 }
 
 .gap-20 {
@@ -476,6 +475,8 @@ li:hover i {
   top: 2rem;
   right: 2rem;
   font-size: 5rem;
+  z-index: 2000;
+  color: white;
 }
 
 input {
@@ -706,4 +707,23 @@ ul {
 
 .contact-home-page {
   padding: 0 2rem 2rem 2rem;
+}
+
+.book-btn {
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-family: "Jost", sans-serif;
+  transition: 0.4s;
+}
+
+.book-btn:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.none-hover:hover img {
+  transform: scale(1);
 }

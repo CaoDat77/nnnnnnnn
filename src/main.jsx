@@ -20,7 +20,7 @@ import Order from "./page/Order";
 
 const routes = createRoutesFromElements(
   <Route element={<Layout />}>
-    <Route path="home" element={<Home />} />
+    <Route path="/" element={<Home />} />
     <Route path="*" element={<div>Page not found</div>}></Route>
     <Route path="aboutRes" element={<AboutRes />} />
     <Route path="contact" element={<ContactPage />} />

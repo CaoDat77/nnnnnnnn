@@ -1,3 +1,5 @@
+import { useLoaderData } from "react-router-dom";
+
 function Order() {
   const menus = [
     {
@@ -112,6 +114,9 @@ function Order() {
       price: 10,
     },
   ];
+
+  const { products, categories } = useLoaderData();
+  const [currentPage, setCurrentPage] = useState(0);
 
   return (
     <div className="container">
