@@ -20,6 +20,7 @@ import Menu from "./page/Menu";
 import Order from "./page/Order";
 import ProductDetail from "./page/ProductDetail";
 import store from "./store/store";
+import Cart from "./page/Cart"
 
 const routes = createRoutesFromElements(
   <Route element={<Layout />}>
@@ -31,6 +32,7 @@ const routes = createRoutesFromElements(
     <Route path="menu" element={<Menu />} />
     <Route path="blog" element={<Blog />} />
     <Route path="order" element={<Order />} />
+    <Route path="cart" element={<Cart />} />
     <Route path="/productsByPage/:productId" element={<ProductDetail />} />
   </Route>
 );

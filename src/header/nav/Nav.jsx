@@ -178,7 +178,7 @@ const Nav = () => {
               </NavLink>
             </li>
             <li className="font-20">
-              <NavLink to="cart.html" className="color-white">
+              <NavLink to="/cart" className="color-white">
                 <i className="bx bx-cart" />
               </NavLink>
             </li>
