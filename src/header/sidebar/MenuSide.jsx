@@ -1,29 +1,66 @@
 import React from "react";
-import "../../index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
+import { slide as Menu, handleOnClose } from "react-burger-menu";
+import "./MenuSide.css";
+import { Modal, Button, Navbar } from "react-bootstrap";
 
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+function MenuSide() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
+  };
+  const handleStateChange = (state) => {
+    setIsMenuOpen(state.isOpen);
+  };
 
-function BookTable() {
   const [show, setShow] = React.useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  return (
-    <div className="container-fluid color-white">
-      <div className="book-table mg-t-80 text-center pd-tb-100">
-        <div className>
-          <p className="font-20 pimary-color font-w line-primary font-nor">
-            ONLINE RESERVATION
-          </p>
 
-          <h1 className="font-50 font-content">BOOK A TABLE</h1>
-        </div>
-        <div className="mg-t-40 btn-form">
-          <button className="set-btn pd-t-30" onClick={handleShow}>
-            BOOK A TABLE NOW
-          </button>
+  return (
+    <Menu isOpen={isMenuOpen} onStateChange={handleStateChange}>
+      <div className="list-nav-mobile">
+        <div className="font-20 item-nav pd-t-40 font-nor">
+          <div className="logo-mobile d-flex justify-content-between align-items-center pd-lr-20">
+            <NavLink to="/">
+              <img
+                src="https://patiotime.loftocean.com/wp-content/uploads/2022/04/pt-logo.svg"
+                alt=""
+              />
+            </NavLink>
+            <div className="close-btn-mobile" onClick={handleCloseMenu}>
+              <i className="bx bx-x" />
+            </div>
+          </div>
+          <NavLink className="color-white" to="/menu">
+            <div className="nav-mobile">Menu</div>
+          </NavLink>
+          <div
+            className="introduce-nav position-relative"
+            style={{ paddingLeft: 0 }}
+          >
+            <div className="btn-about d-flex justify-content-between align-items-center nav-mobile">
+              <p style={{ marginBottom: 0 }}>Abouts</p>
+              <i className="bx bx-chevron-down" />
+            </div>
+            <div className="abouts-nav pd-l-40">
+              <NavLink className="color-white font-16" to="/aboutRes">
+                <div className="nav-mobile">About Restaurant</div>
+              </NavLink>
+              <NavLink className="color-white font-16" to="/aboutCheff">
+                <div className="nav-mobile">About Cheff</div>
+              </NavLink>
+            </div>
+          </div>
+          <NavLink className="color-white" to="/contact">
+            <div className="nav-mobile">Contact</div>
+          </NavLink>
+          <NavLink className="color-white" to="/blog">
+            <div className="nav-mobile">Blog</div>
+          </NavLink>
+          <div className="nav-mobile table-online" onClick={handleShow}>
+            Find A Table
+          </div>
           <Modal
             show={show}
             onHide={handleClose}
@@ -110,10 +147,39 @@ function BookTable() {
               </span>
             </div>
           </Modal>
+          <NavLink className="color-white" to="/order">
+            <div className="nav-mobile">Order Online</div>
+          </NavLink>
+          <NavLink className="color-white" to="/cart">
+            <div className="nav-mobile">
+              <i className="bx bx-cart" />
+            </div>
+          </NavLink>
+          <div className="pd-lr-20 pd-t-10">
+            <div className="icons mg-b-20">
+              <i className="fb bx bxl-facebook-circle" />
+              <i className="ig bx bxl-instagram" />
+              <i className="tw bx bxl-twitter" />
+              <i className="pn bx bxl-pinterest-alt" />
+              <i className="ytb bx bxl-youtube" />
+            </div>
+            <div className="contact-nav">
+              <p className="pd-b-10">
+                <i className="bx bx-location-plus" /> Silk St, Barbican, London
+                EC2Y 8DS, UK
+              </p>
+              <p className="pd-b-10">
+                <i className="bx bx-phone" /> +39-055-123456
+              </p>
+              <p className="pd-b-10">
+                <i className="bx bx-envelope" /> booking@patiotime.com
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </Menu>
   );
 }
 
-export default BookTable;
+export default MenuSide;

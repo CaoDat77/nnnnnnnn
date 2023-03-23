@@ -35,7 +35,7 @@ function Contact() {
             </p>
             <button className="set-btn">
               <NavLink
-                className="pimary-color"
+                className="color-white"
                 to="https://goo.gl/maps/Ac4jxtSTAXpNGmpt8"
               >
                 VIEW IN GOOGLE MAPS

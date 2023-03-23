@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.header-body {
+  height: 100vh;
+  position: relative;
+  top: -8rem;
+}
